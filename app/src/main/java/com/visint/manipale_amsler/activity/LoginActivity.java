@@ -93,7 +93,7 @@ public class LoginActivity extends Activity {
                 else
                 {
                     // Prompt user to enter credentials
-                    Toast.makeText(getApplicationContext(),"Please enter the credentials!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"Please enter credentials!", Toast.LENGTH_LONG).show();
                 }
             }
 
@@ -188,7 +188,7 @@ public class LoginActivity extends Activity {
             public void onErrorResponse(VolleyError error)
             {
                 Log.e(TAG, "Login Error: " + error.getMessage());
-                Toast.makeText(getApplicationContext(),"Unexcepted error, please check your internet connectivity or try after some time", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Unexcepted error, Please check your 3G/ WIFI connection availability or try after some time", Toast.LENGTH_LONG).show();
                 hideDialog();
             }
         })
