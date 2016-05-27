@@ -3,6 +3,7 @@ package com.visint.manipale_amsler.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -17,11 +18,12 @@ import java.util.HashMap;
  * Created by MAHE on 5/23/2016.
  */
 public class PatientActivity extends Activity {
-    private TextView txtName;
+ /*   private TextView txtName;
     private TextView w;
     private TextView txtEmail;
-    private Button btnLogout;
+    private Button btnLogout; */
 
+    CardView jcardpamsler,jcardpappoint,jcardpconsult,jcardphistory,jcardplogout;
     private SQLiteHandler db;
     private SessionManager session;
 
@@ -30,12 +32,16 @@ public class PatientActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_patient);
 
-        txtName = (TextView) findViewById(R.id.name);
+     /*   txtName = (TextView) findViewById(R.id.name);
         txtEmail = (TextView) findViewById(R.id.email);
         w = (TextView) findViewById(R.id.w);
-        btnLogout = (Button) findViewById(R.id.btnLogout);
+        btnLogout = (Button) findViewById(R.id.btnLogout); */
 
-
+        jcardpamsler=(CardView)findViewById(R.id.card_view_pamsler);
+        jcardpappoint=(CardView)findViewById(R.id.card_view_pappoint);
+        jcardpconsult=(CardView)findViewById(R.id.card_view_pconsult);
+        jcardphistory=(CardView)findViewById(R.id.card_view_phistory);
+        jcardplogout=(CardView)findViewById(R.id.card_view_plogout);
         // SqLite database handler
         db = new SQLiteHandler(getApplicationContext());
 
@@ -53,20 +59,32 @@ public class PatientActivity extends Activity {
         String type = user.get("utype");
         //   String did = user.get("lid");
 
-        // Displaying the user details on the screen
+    /*    // Displaying the user details on the screen
         txtName.setText(did);
         txtEmail.setText(name);
-       // w.setText(type);
+       // w.setText(type);  */
 
 
-        // Logout button click event
-        btnLogout.setOnClickListener(new View.OnClickListener() {
+        // Amsler Cardview click event
+       /* jcardpamsler.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent amslertest= new Intent(PatientActivity.this,AmslerTest.class);
+                startActivity(amslertest);
+            }
+        });*/
+   // Logout Cardview click event
+        jcardplogout.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 logoutUser();
             }
         });
+
+
+
     }
 
     /**

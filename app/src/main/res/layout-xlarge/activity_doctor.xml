@@ -4,6 +4,7 @@
     android:layout_height="fill_parent"
     >
 
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,7 +13,7 @@
 
     <!--top card view starts here-->
     <android.support.v7.widget.CardView
-        android:id="@+id/card_view_pamsler"
+        android:id="@+id/card_view_dpatient"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="240dp"
@@ -27,16 +28,14 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="180dp"
-            android:orientation="horizontal"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center"
             >
 
             <TextView
-                android:id="@+id/tvpamslertest"
+                android:id="@+id/tvviewpat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Take a Amsler test"
+                android:text="View Patients"
                 android:textColor="@color/icons"
                 android:textAppearance="?android:attr/textAppearanceLarge"/>
         </LinearLayout>
@@ -46,10 +45,10 @@
 
     <!--2nd card view starts here-->
     <android.support.v7.widget.CardView
-        android:id="@+id/card_view_pappoint"
+        android:id="@+id/card_view_dappoint"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="240dp"
         card_view:cardBackgroundColor="@color/primary"
         card_view:cardCornerRadius="5dp"
         card_view:cardElevation="8dp"
@@ -63,10 +62,10 @@
             >
 
             <TextView
-                android:id="@+id/tvpappoint"
+                android:id="@+id/tvdappoint"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Book an appointment"
+                android:text="View Appointments"
                 android:textColor="@color/icons"
                 android:textAppearance="?android:attr/textAppearanceLarge"/>
         </LinearLayout>
@@ -77,10 +76,10 @@
 
     <!--3rd nd card view starts here-->
     <android.support.v7.widget.CardView
-        android:id="@+id/card_view_pconsult"
+        android:id="@+id/card_view_dhistory"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="240dp"
         card_view:cardBackgroundColor="@color/primary"
         card_view:cardCornerRadius="5dp"
         card_view:cardElevation="8dp"
@@ -94,10 +93,10 @@
             >
 
             <TextView
-                android:id="@+id/tvpconsult"
+                android:id="@+id/tvdmedhis"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Consult a doctor"
+                android:text="Medical history"
                 android:textColor="@color/icons"
                 android:textAppearance="?android:attr/textAppearanceLarge"/>
         </LinearLayout>
@@ -105,15 +104,16 @@
     </android.support.v7.widget.CardView>
 
 
-    <!--3rd nd card view starts here-->
+    <!--4th card view starts here-->
     <android.support.v7.widget.CardView
-        android:id="@+id/card_view_phistory"
+        android:id="@+id/card_view_dprofile"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="240dp"
         card_view:cardBackgroundColor="@color/primary"
         card_view:cardCornerRadius="5dp"
         card_view:cardElevation="8dp"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
         card_view:cardUseCompatPadding="true"
         >
 
@@ -124,7 +124,7 @@
             >
 
             <TextView
-                android:id="@+id/medphistory"
+                android:id="@+id/tvdprof"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Medical History"
@@ -135,15 +135,16 @@
     </android.support.v7.widget.CardView>
 
 
-    <!--5th  card view starts here-->
+    <!--4th card view starts here-->
     <android.support.v7.widget.CardView
-        android:id="@+id/card_view_plogout"
+        android:id="@+id/card_view_dlogout"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="240dp"
         card_view:cardBackgroundColor="@color/primary"
         card_view:cardCornerRadius="5dp"
         card_view:cardElevation="8dp"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
         card_view:cardUseCompatPadding="true"
         >
 
@@ -154,7 +155,7 @@
             >
 
             <TextView
-                android:id="@+id/tvplog"
+                android:id="@+id/tvdlog"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Logout"
@@ -165,8 +166,5 @@
     </android.support.v7.widget.CardView>
 
 
-
 </LinearLayout>
-
-
 </ScrollView>

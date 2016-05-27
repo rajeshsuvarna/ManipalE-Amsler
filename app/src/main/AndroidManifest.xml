@@ -18,15 +18,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Activity connections of Splash screen -->
         <activity android:name=".Splashscreen"
             android:theme="@style/MyMaterialTheme">
             </activity>
+
+        <!-- Activity connections of Login screen -->
         <activity android:name=".activity.LoginActivity"
             android:theme="@style/MyMaterialTheme">
         </activity>
+
+        <!-- Activity connections of Amsler Test -->
+
+        <!-- Activity connections of Doctor Dashboard Activity -->
         <activity android:name=".activity.DoctorActivity"
             android:theme="@style/MyMaterialTheme">
         </activity>
+
+        <!-- Activity connections of Patient Dashboard Activity -->
         <activity android:name=".activity.PatientActivity"
             android:theme="@style/MyMaterialTheme">
         </activity>

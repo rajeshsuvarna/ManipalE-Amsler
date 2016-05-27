@@ -15,7 +15,7 @@
         android:id="@+id/card_view_pamsler"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="240dp"
+        android:layout_height="500dp"
         android:layout_marginTop="20dp"
         card_view:cardBackgroundColor="@color/primary"
         card_view:cardCornerRadius="5dp"
@@ -27,7 +27,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="180dp"
+            android:layout_marginTop="420dp"
             android:orientation="horizontal"
             android:layout_gravity="center_horizontal"
             >
@@ -49,7 +49,7 @@
         android:id="@+id/card_view_pappoint"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="150dp"
         card_view:cardBackgroundColor="@color/primary"
         card_view:cardCornerRadius="5dp"
         card_view:cardElevation="8dp"
@@ -80,7 +80,7 @@
         android:id="@+id/card_view_pconsult"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="150dp"
         card_view:cardBackgroundColor="@color/primary"
         card_view:cardCornerRadius="5dp"
         card_view:cardElevation="8dp"
@@ -105,12 +105,12 @@
     </android.support.v7.widget.CardView>
 
 
-    <!--3rd nd card view starts here-->
+    <!--4th  card view starts here-->
     <android.support.v7.widget.CardView
         android:id="@+id/card_view_phistory"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="150dp"
         card_view:cardBackgroundColor="@color/primary"
         card_view:cardCornerRadius="5dp"
         card_view:cardElevation="8dp"
@@ -140,7 +140,7 @@
         android:id="@+id/card_view_plogout"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="150dp"
         card_view:cardBackgroundColor="@color/primary"
         card_view:cardCornerRadius="5dp"
         card_view:cardElevation="8dp"
@@ -164,9 +164,6 @@
 
     </android.support.v7.widget.CardView>
 
-
-
 </LinearLayout>
-
 
 </ScrollView>
