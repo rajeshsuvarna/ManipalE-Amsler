@@ -3,6 +3,8 @@
     package="com.visint.manipale_amsler">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application android:name=".app.AppController"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -26,6 +28,9 @@
             android:theme="@style/MyMaterialTheme">
         </activity>
         <activity android:name=".activity.PatientActivity"
+            android:theme="@style/MyMaterialTheme">
+        </activity>
+        <activity android:name=".activity.AmslerTest"
             android:theme="@style/MyMaterialTheme">
         </activity>
     </application>

@@ -69,7 +69,7 @@ public class LoginActivity extends Activity {
         if (session.isLoggedIn())
         {
             // User is already logged in. Take him to main activity
-            Intent intent = new Intent(LoginActivity.this,DoctorActivity.class);
+            Intent intent = new Intent(LoginActivity.this,AmslerTest.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
             finish();
