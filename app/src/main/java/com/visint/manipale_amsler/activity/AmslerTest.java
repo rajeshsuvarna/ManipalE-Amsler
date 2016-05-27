@@ -63,7 +63,7 @@ public class AmslerTest extends AppCompatActivity {
         jrgroup = (RadioGroup) findViewById(R.id.rgroup);
         jseek = (SeekBar) findViewById(R.id.seekBar);
 
-        rbtn = new RadioButton[]{(RadioButton) findViewById(R.id.blur),
+        rbtn =  new RadioButton[]{(RadioButton) findViewById(R.id.blur),
                 (RadioButton) findViewById(R.id.darkspot),
                 (RadioButton) findViewById(R.id.wavy),
                 (RadioButton) findViewById(R.id.distort)};
