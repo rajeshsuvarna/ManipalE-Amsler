@@ -10,6 +10,7 @@ import com.visint.manipale_amsler.helper.SessionManager;
 import java.util.HashMap;
 
 import android.app.Activity;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -17,11 +18,13 @@ import android.widget.TextView;
 
 public class DoctorActivity extends Activity {
 
-    private TextView txtName;
+ /*   private TextView txtName;
     private TextView w;
     private TextView txtEmail;
     private Button btnLogout;
+*/
 
+    CardView jcarddpatients,jcarddappoint,jcarddhistory,jcarddprofile,jcarddlogout;
     private SQLiteHandler db;
     private SessionManager session;
 
@@ -30,12 +33,16 @@ public class DoctorActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor);
 
-        txtName = (TextView) findViewById(R.id.name);
+    /*    txtName = (TextView) findViewById(R.id.name);
         txtEmail = (TextView) findViewById(R.id.email);
         w = (TextView) findViewById(R.id.w);
-        btnLogout = (Button) findViewById(R.id.btnLogout);
+        btnLogout = (Button) findViewById(R.id.btnLogout);*/
 
-
+        jcarddpatients=(CardView)findViewById(R.id.card_view_dpatient);
+        jcarddappoint=(CardView)findViewById(R.id.card_view_dappoint);
+        jcarddhistory=(CardView)findViewById(R.id.card_view_dhistory);
+        jcarddprofile=(CardView)findViewById(R.id.card_view_dprofile);
+        jcarddlogout=(CardView)findViewById(R.id.card_view_dlogout);
         // SqLite database handler
         db = new SQLiteHandler(getApplicationContext());
 
@@ -54,20 +61,21 @@ public class DoctorActivity extends Activity {
      //   String did = user.get("lid");
 
         // Displaying the user details on the screen
-        txtName.setText(did);
-        txtEmail.setText(name);
+      /*  txtName.setText(did);
+        txtEmail.setText(name);*/
       //  w.setText(type);
 
 
 
-        // Logout button click event
-        btnLogout.setOnClickListener(new View.OnClickListener() {
+        // Logout cardview click event
+        jcarddlogout.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 logoutUser();
             }
         });
+
     }
 
     /**
