@@ -43,6 +43,9 @@
         <activity android:name=".activity.AmslerTest"
             android:theme="@style/MyMaterialTheme">
         </activity>
+        <activity android:name=".activity.ChatActivity"
+            android:theme="@style/MyMaterialTheme">
+        </activity>
     </application>
 
 </manifest>
