@@ -15,10 +15,9 @@
         android:id="@+id/card_view_pamsler"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="240dp"
+        android:layout_height="250dp"
         android:layout_marginTop="20dp"
-        card_view:cardBackgroundColor="@color/primary"
-        card_view:cardCornerRadius="5dp"
+        card_view:cardBackgroundColor="@color/icons"
         card_view:cardElevation="8dp"
         card_view:cardUseCompatPadding="true"
         >
@@ -37,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Take a Amsler test"
-                android:textColor="@color/icons"
+                android:textColor="@color/primary_text"
                 android:textAppearance="?android:attr/textAppearanceLarge"/>
         </LinearLayout>
 
@@ -50,25 +49,40 @@
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        card_view:cardBackgroundColor="@color/primary"
-        card_view:cardCornerRadius="5dp"
+        card_view:cardBackgroundColor="@color/icons"
         card_view:cardElevation="8dp"
         card_view:cardUseCompatPadding="true"
         >
 
+
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             >
 
-            <TextView
-                android:id="@+id/tvpappoint"
-                android:layout_width="wrap_content"
+            <ImageView
+                android:id="@+id/imageViewp2"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Book an appointment"
-                android:textColor="@color/icons"
-                android:textAppearance="?android:attr/textAppearanceLarge"/>
+                android:layout_weight="1"
+                android:src="@drawable/ic_launcher"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tvpappoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book an appointment"
+                    android:textColor="@color/primary_text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+            </LinearLayout>
         </LinearLayout>
 
 
@@ -77,30 +91,46 @@
 
     <!--3rd nd card view starts here-->
     <android.support.v7.widget.CardView
-        android:id="@+id/card_view_pconsult"
+        android:id="@+id/card_view_pchat"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        card_view:cardBackgroundColor="@color/primary"
-        card_view:cardCornerRadius="5dp"
+        card_view:cardBackgroundColor="@color/icons"
         card_view:cardElevation="8dp"
         card_view:cardUseCompatPadding="true"
         >
 
-        <LinearLayout
-            android:layout_width="wrap_content"
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewp3"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
             android:layout_gravity="center"
+            android:orientation="vertical"
             >
 
             <TextView
-                android:id="@+id/tvpconsult"
+                android:id="@+id/tvpchat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Consult a doctor"
-                android:textColor="@color/icons"
+                android:text="Chat with doctor"
+                android:textColor="@color/primary_text"
                 android:textAppearance="?android:attr/textAppearanceLarge"/>
         </LinearLayout>
+    </LinearLayout>
 
     </android.support.v7.widget.CardView>
 
@@ -111,26 +141,43 @@
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        card_view:cardBackgroundColor="@color/primary"
-        card_view:cardCornerRadius="5dp"
+        card_view:cardBackgroundColor="@color/icons"
         card_view:cardElevation="8dp"
         card_view:cardUseCompatPadding="true"
         >
 
-        <LinearLayout
-            android:layout_width="wrap_content"
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewp4"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
             android:layout_gravity="center"
+            android:orientation="vertical"
             >
+
 
             <TextView
                 android:id="@+id/medphistory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Medical History"
-                android:textColor="@color/icons"
+                android:textColor="@color/primary_text"
                 android:textAppearance="?android:attr/textAppearanceLarge"/>
         </LinearLayout>
+    </LinearLayout>
 
     </android.support.v7.widget.CardView>
 
@@ -141,26 +188,42 @@
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        card_view:cardBackgroundColor="@color/primary"
-        card_view:cardCornerRadius="5dp"
+        card_view:cardBackgroundColor="@color/icons"
         card_view:cardElevation="8dp"
         card_view:cardUseCompatPadding="true"
         >
 
-        <LinearLayout
-            android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewp5"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
             android:layout_gravity="center"
+            android:orientation="vertical"
             >
+
 
             <TextView
                 android:id="@+id/tvplog"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Logout"
-                android:textColor="@color/icons"
+                android:textColor="@color/primary_text"
                 android:textAppearance="?android:attr/textAppearanceLarge"/>
         </LinearLayout>
+    </LinearLayout>
 
     </android.support.v7.widget.CardView>
 

@@ -81,9 +81,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="2dp"
                 android:layout_weight="0.5"
-                android:background="@color/accent"
+                android:background="@color/icons"
                 android:text="START TEST"
-                android:textColor="@color/icons"
+                android:textColor="@color/primary_text"
                 android:textSize="14sp" />
 
             <Button
@@ -92,9 +92,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="2dp"
                 android:layout_weight="0.5"
-                android:background="@color/accent"
+                android:background="@color/icons"
                 android:text="CLEAR"
-                android:textColor="@color/icons"
+                android:textColor="@color/primary_text"
                 android:textSize="14sp" />
 
         </LinearLayout>

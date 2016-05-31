@@ -23,7 +23,7 @@ public class PatientActivity extends Activity {
     private TextView txtEmail;
     private Button btnLogout; */
 
-    CardView jcardpamsler,jcardpappoint,jcardpconsult,jcardphistory,jcardplogout;
+    CardView jcardpamsler,jcardpappoint,jcardpchat,jcardphistory,jcardplogout;
     private SQLiteHandler db;
     private SessionManager session;
 
@@ -39,7 +39,7 @@ public class PatientActivity extends Activity {
 
         jcardpamsler=(CardView)findViewById(R.id.card_view_pamsler);
         jcardpappoint=(CardView)findViewById(R.id.card_view_pappoint);
-        jcardpconsult=(CardView)findViewById(R.id.card_view_pconsult);
+        jcardpchat=(CardView)findViewById(R.id.card_view_pchat);
         jcardphistory=(CardView)findViewById(R.id.card_view_phistory);
         jcardplogout=(CardView)findViewById(R.id.card_view_plogout);
         // SqLite database handler
@@ -66,14 +66,25 @@ public class PatientActivity extends Activity {
 
 
         // Amsler Cardview click event
-       /* jcardpamsler.setOnClickListener(new View.OnClickListener() {
+        jcardpamsler.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 Intent amslertest= new Intent(PatientActivity.this,AmslerTest.class);
                 startActivity(amslertest);
             }
-        });*/
+        });
+
+
+        // Chat with doctor Cardview click event
+        jcardpchat.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent amslertest= new Intent(PatientActivity.this,ChatActivity.class);
+                startActivity(amslertest);
+            }
+        });
    // Logout Cardview click event
         jcardplogout.setOnClickListener(new View.OnClickListener() {
 

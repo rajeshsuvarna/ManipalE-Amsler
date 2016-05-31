@@ -220,6 +220,16 @@ public class AmslerTest extends AppCompatActivity {
 
     }
 
+    // onBackPressed directs you to home screen of patient activity
+    @Override
+    public void onBackPressed() {
+
+        Intent backpressed=new Intent(AmslerTest.this,PatientActivity.class);
+        startActivity(backpressed);
+
+    }
+
+
 
     private void radioController(int toggle, int id) {
         if (toggle == 0) {

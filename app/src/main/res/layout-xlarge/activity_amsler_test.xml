@@ -16,7 +16,7 @@
         <com.visint.manipale_amsler.activity.CanvasView
             android:id="@+id/signature_canvas"
             android:layout_width="match_parent"
-            android:layout_height="650dp"
+            android:layout_height="750dp"
             android:background="@drawable/amslergrid"
             android:textColor="#FFFFFF" />
 
