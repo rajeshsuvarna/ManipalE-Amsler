@@ -14,6 +14,7 @@ import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -25,11 +26,14 @@ public class CanvasView extends View {
 
     int finalScore;
 
+    // 1 is enabled 0 is disabled
+    public int mode;
+
     public int width;
     public int height;
     private Bitmap mBitmap;
     private Canvas mCanvas;
-    private Path mPath;
+    public Path mPath;
     Context context;
     public Paint mPaint;
     private float mX, mY;
@@ -73,7 +77,11 @@ public class CanvasView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         // draw the mPath with the mPaint on the canvas when onDraw
+
         canvas.drawPath(mPath, mPaint);
+
+
+        // canvas.drawText("hi",mX,mY,mPaint);
     }
 
     // when ACTION_DOWN start touch according to the x,y values
@@ -96,6 +104,10 @@ public class CanvasView extends View {
 
     public void clearCanvas() {
         mPath.reset();
+        invalidate();
+    }
+    public void invalid()
+    {
         invalidate();
     }
 

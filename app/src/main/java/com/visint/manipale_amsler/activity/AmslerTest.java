@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.BlurMaskFilter;
+import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
@@ -12,6 +13,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Base64;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -20,11 +22,23 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.visint.manipale_amsler.ImageEffects.MultiRuntimeProcessorFilter;
 import com.visint.manipale_amsler.R;
+import com.visint.manipale_amsler.app.AppConfig;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.util.Calendar;
+import java.util.Hashtable;
+import java.util.Map;
 import java.util.Random;
 
 /**
@@ -38,19 +52,27 @@ public class AmslerTest extends AppCompatActivity {
     SeekBar jseek;
     TextView jinstruction;
 
+    private static String A_SCORE = "score";
+    private static String IMAGE = "image";
+    private static String FILENAME = "filename";
+    private static String DATE = "test_date";
+    private static String CHIEF_COMPLAINT_ID = "idChief_Complaint";
+    private static String CLINIC_TEST_ID = "idClinic_Test";
+    private static String PATIENT_ID = "idPatient";
+
     RadioButton[] rbtn;
 
-    public String tempPhotoPath;
+    Bitmap bm;
 
-    int globalscore;
+    public String tempPhotoPath, rogueState = "";
+
+    int globalscore, md, prog = 1;
 
     String mCurrentPhotoPath;
 
+    String fname;
+
     public static int RADIUS = 100;
-
-    int prog = 1;
-
-    public String rogueState = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,13 +105,11 @@ public class AmslerTest extends AppCompatActivity {
             }
         });
 
-
         cv.setVisibility(View.INVISIBLE);
         jclear.setVisibility(View.INVISIBLE);
         jseek.setVisibility(View.INVISIBLE);
         jrgroup.setVisibility(View.INVISIBLE);
         jinstruction.setText("Click START TEST to begin the test");
-
 
         jrogue.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -116,57 +136,82 @@ public class AmslerTest extends AppCompatActivity {
                     Bitmap bm = cv.getBitmap();
                     saveImage(bm);
 
-                    galleryAddPic();
-
                     globalscore = (int) (cv.score / 100);
+
+                    String encoded_image_string = getStringImage(bm);
+
+                    uploadImage(String.valueOf(globalscore), encoded_image_string, fname);
+
+                    galleryAddPic();
 
                     jinstruction.setText("Click START TEST to begin the test");
 
                     rogueState = "START TEST";
                     jrogue.setText("START TEST");
+                    clearCanvas(v);
+                    clearDistort();
                 }
-
-
-                Toast.makeText(AmslerTest.this, String.valueOf(globalscore), Toast.LENGTH_SHORT).show();
+                // Toast.makeText(AmslerTest.this, String.valueOf(globalscore), Toast.LENGTH_SHORT).show();
             }
         });
-
 
         jrgroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
                                                @Override
                                                public void onCheckedChanged(RadioGroup group, int checkedId) {
-                                                   Bitmap bm;
+
                                                    jseek.setVisibility(View.INVISIBLE);
+
+                                                   bm = cv.getBitmap();
+                                                   grabNchange(bm);
+
                                                    switch (checkedId) {
                                                        case R.id.blur:
+
                                                            bm = cv.getBitmap();
                                                            grabNchange(bm);
+
+                                                           cv.clearCanvas();
+
+                                                           cv.mPaint.setColor(Color.BLACK);
                                                            cv.mPaint.setMaskFilter(new BlurMaskFilter(8, BlurMaskFilter.Blur.NORMAL));
                                                            cv.mPaint.setAlpha(100);
                                                            jseek.setVisibility(View.VISIBLE);
-                                                           //radioController(0, 0);
+
                                                            break;
 
                                                        case R.id.darkspot:
+
                                                            bm = cv.getBitmap();
                                                            grabNchange(bm);
+
+                                                           cv.clearCanvas();
+
+                                                           cv.mPaint.setColor(Color.BLACK);
                                                            cv.mPaint.setMaskFilter(null);
                                                            cv.mPaint.setAlpha(ori_alpha);
                                                            jseek.setVisibility(View.VISIBLE);
-                                                           //radioController(0, 1);
+
                                                            break;
 
                                                        case R.id.wavy:
+
                                                            bm = cv.getBitmap();
                                                            grabNchange(bm);
-                                                           //radioController(0, 2);
+
+                                                           cv.clearCanvas();
+
+                                                           cv.mPaint.setMaskFilter(null);
+                                                           cv.mPaint.setAlpha(ori_alpha);
+                                                           cv.mPaint.setColor(Color.RED);
+                                                           jseek.setVisibility(View.VISIBLE);
                                                            break;
 
                                                        case R.id.distort:
+
                                                            bm = cv.getBitmap();
                                                            grabNchange(bm);
                                                            jseek.setVisibility(View.VISIBLE);
-                                                           //radioController(0, 3);
+
                                                            new AsyncTask<Void, Void, String>() {
                                                                MultiRuntimeProcessorFilter mFilers = new MultiRuntimeProcessorFilter();
 
@@ -176,7 +221,8 @@ public class AmslerTest extends AppCompatActivity {
                                                                }
 
                                                                protected String doInBackground(Void... params) {
-                                                                   Bitmap bitmap1 = BitmapFactory.decodeResource(getResources(), R.drawable.amslergrid);
+
+                                                                   Bitmap bitmap1 = BitmapFactory.decodeFile(tempPhotoPath);
                                                                    bitmapSP = mFilers.barrel(bitmap1, 0.00005f, RADIUS);
                                                                    return "message";
                                                                }
@@ -188,16 +234,14 @@ public class AmslerTest extends AppCompatActivity {
 
                                                                }
                                                            }.execute();
+
                                                            break;
                                                    }
                                                }
                                            }
-
         );
 
-        jseek.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener()
-
-                                         {
+        jseek.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
                                              @Override
                                              public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                                                  prog = progress;
@@ -205,17 +249,14 @@ public class AmslerTest extends AppCompatActivity {
 
                                              @Override
                                              public void onStartTrackingTouch(SeekBar seekBar) {
-
                                              }
 
                                              @Override
                                              public void onStopTrackingTouch(SeekBar seekBar) {
                                                  cv.mPaint.setStrokeWidth(prog);
                                                  RADIUS = prog;
-
                                              }
                                          }
-
         );
 
     }
@@ -224,11 +265,10 @@ public class AmslerTest extends AppCompatActivity {
     @Override
     public void onBackPressed() {
 
-        Intent backpressed=new Intent(AmslerTest.this,PatientActivity.class);
+        Intent backpressed = new Intent(AmslerTest.this, PatientActivity.class);
         startActivity(backpressed);
 
     }
-
 
 
     private void radioController(int toggle, int id) {
@@ -273,7 +313,6 @@ public class AmslerTest extends AppCompatActivity {
         cv.clearCanvas();
     }
 
-
     void saveImage(Bitmap img) {
 
         String RootDir = Environment.getExternalStorageDirectory()
@@ -287,7 +326,7 @@ public class AmslerTest extends AppCompatActivity {
         int n = 10000;
         n = generator.nextInt(n); // replace with testid
 
-        String fname = "Test" + n + ".jpg";
+        fname = "Test" + n + ".jpg";
 
         File file = new File(myDir, fname);
 
@@ -304,7 +343,7 @@ public class AmslerTest extends AppCompatActivity {
 
         mCurrentPhotoPath = file.getAbsolutePath();
 
-        Toast.makeText(AmslerTest.this, "Image saved to 'Visint' folder", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(AmslerTest.this, "Image saved to 'Visint' folder", Toast.LENGTH_SHORT).show();
     }
 
     private void galleryAddPic() {
@@ -339,11 +378,67 @@ public class AmslerTest extends AppCompatActivity {
 
         tempPhotoPath = file.getAbsolutePath();
 
-
         Bitmap myBitmap = BitmapFactory.decodeFile(tempPhotoPath);
         Drawable drawable = new BitmapDrawable(getResources(), myBitmap);
         cv.setBackground(drawable);
 
+        cv.postInvalidate();
+
+    }
+
+    public String getStringImage(Bitmap bmp) {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        bmp.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+        byte[] imageBytes = baos.toByteArray();
+        String encodedImage = Base64.encodeToString(imageBytes, Base64.DEFAULT);
+        return encodedImage;
+    }
+
+    private void uploadImage(final String a_score, final String image, final String f_name) {
+
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, AppConfig.UPLOAD_TEST_URL,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String s) {
+
+                        //Showing toast message of the response
+                        Toast.makeText(AmslerTest.this, s, Toast.LENGTH_LONG).show();
+                        Toast.makeText(AmslerTest.this, "Test has been Saved", Toast.LENGTH_SHORT).show();
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError volleyError) {
+
+                        //Showing toast
+                        Toast.makeText(AmslerTest.this,""+ volleyError.toString(), Toast.LENGTH_LONG).show();
+                    }
+                }) {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+
+                //Creating parameters
+                Map<String, String> params = new Hashtable<String, String>();
+
+                //Adding parameters
+                params.put(A_SCORE, a_score);
+                params.put(IMAGE, image);
+                params.put(FILENAME, f_name);
+                params.put(DATE, Calendar.getInstance().getTime().toString());
+                params.put(CHIEF_COMPLAINT_ID, "1");
+                params.put(CLINIC_TEST_ID, "1");
+                params.put(PATIENT_ID, "100");
+
+                //returning parameters
+                return params;
+            }
+        };
+
+        //Creating a Request Queue
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+
+        //Adding request to the queue
+        requestQueue.add(stringRequest);
     }
 
 }

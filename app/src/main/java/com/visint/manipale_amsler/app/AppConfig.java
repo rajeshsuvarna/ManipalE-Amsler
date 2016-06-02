@@ -5,8 +5,9 @@ package com.visint.manipale_amsler.app;
  */
 public class AppConfig {
 
-        // Server user login url
-        public static String URL_LOGIN = "http://www.stonedbro.xyz/api/login.php";
+    // Server user login url
+    public static String URL_LOGIN = "http://www.stonedbro.xyz/api/login.php";
+    public static String UPLOAD_TEST_URL = "http://www.stonedbro.xyz/api/amsler_test.php";
 
-    }
+}
 

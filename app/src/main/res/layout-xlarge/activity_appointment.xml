@@ -14,10 +14,16 @@
         <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
+<<<<<<< HEAD
             android:layout_height="1200dp"
             android:orientation="vertical"
             android:padding="10dp"
             >
+=======
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+>>>>>>> origin/master
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -25,8 +31,13 @@
                 android:gravity="center_horizontal">
 
                 <ImageView
+<<<<<<< HEAD
                     android:layout_width="220dp"
                     android:layout_height="400dp"
+=======
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+>>>>>>> origin/master
                     android:src="@drawable/calendar" />
             </LinearLayout>
 
@@ -35,28 +46,50 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
+<<<<<<< HEAD
                 android:layout_marginBottom="10dp"
+=======
+>>>>>>> origin/master
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
+<<<<<<< HEAD
                     android:layout_height="50dp"
+=======
+                    android:layout_height="wrap_content"
+>>>>>>> origin/master
                     android:gravity="left"
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingTop="5dp"
                     android:text="Week Schedule : Dr. "
+<<<<<<< HEAD
                     android:textSize="34sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+=======
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+>>>>>>> origin/master
                     android:background="@color/cardview_light_background"
                     android:gravity="left"
                     android:paddingBottom="5dp"
                     android:paddingTop="5dp"
+<<<<<<< HEAD
                     android:text="Subramanyam"
                     android:textSize="34sp" />
+=======
+
+                    android:text="Subramanyam"
+                    android:textSize="17sp" />
+>>>>>>> origin/master
 
 
             </LinearLayout>
@@ -70,34 +103,58 @@
 
                 <TextView
                     android:layout_width="fill_parent"
+<<<<<<< HEAD
                     android:layout_height="50dp"
+=======
+                    android:layout_height="wrap_content"
+>>>>>>> origin/master
                     android:layout_weight="0.2"
                     android:background="@color/cardview_light_background"
                     android:gravity="center_horizontal"
                     android:padding="5dp"
                     android:text="Days"
                     android:textColor="@color/primary_text"
+<<<<<<< HEAD
                     android:textSize="30sp" />
 
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="match_parent"
+=======
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+>>>>>>> origin/master
                     android:layout_weight="0.2"
                     android:background="@color/cardview_light_background"
                     android:gravity="center_horizontal"
                     android:padding="5dp"
                     android:text="Morning"
+<<<<<<< HEAD
                     android:textSize="30sp" />
 
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="match_parent"
+=======
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+>>>>>>> origin/master
                     android:layout_weight="0.2"
                     android:background="@color/cardview_light_background"
                     android:gravity="center_horizontal"
                     android:padding="5dp"
                     android:text="Afternoon"
+<<<<<<< HEAD
                     android:textSize="30sp" />
+=======
+                    android:textSize="17sp" />
+>>>>>>> origin/master
 
 
             </LinearLayout>
@@ -117,14 +174,22 @@
 
                     <TextView
                         android:layout_width="fill_parent"
+<<<<<<< HEAD
                         android:layout_height="50dp"
+=======
+                        android:layout_height="match_parent"
+>>>>>>> origin/master
                         android:layout_weight="0.2"
                         android:background="@color/primary_light"
                         android:gravity="center_horizontal"
                         android:padding="5dp"
                         android:text="Monday"
                         android:textColor="@color/cardview_dark_background"
+<<<<<<< HEAD
                         android:textSize="30sp" />
+=======
+                        android:textSize="17sp" />
+>>>>>>> origin/master
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -133,8 +198,12 @@
                         android:background="@color/yellow_material"
                         android:gravity="center_horizontal"
                         android:padding="5dp"
+<<<<<<< HEAD
                         android:text="0900 - 1200"
                         android:textSize="30sp"/>
+=======
+                        android:text="0900 - 1200" />
+>>>>>>> origin/master
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -143,8 +212,12 @@
                         android:background="@color/yellow_material"
                         android:gravity="center_horizontal|center_vertical"
                         android:padding="5dp"
+<<<<<<< HEAD
                         android:text="1400 - 1700"
                         android:textSize="30sp"/>
+=======
+                        android:text="1400 - 1700" />
+>>>>>>> origin/master
 
 
                 </LinearLayout>
@@ -167,14 +240,22 @@
 
                     <TextView
                         android:layout_width="fill_parent"
+<<<<<<< HEAD
                         android:layout_height="50dp"
+=======
+                        android:layout_height="match_parent"
+>>>>>>> origin/master
                         android:layout_weight="0.2"
                         android:background="@color/primary_light"
                         android:gravity="center_horizontal"
                         android:padding="5dp"
                         android:text="Tuesday"
                         android:textColor="@color/cardview_dark_background"
+<<<<<<< HEAD
                         android:textSize="30sp" />
+=======
+                        android:textSize="17sp" />
+>>>>>>> origin/master
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -215,14 +296,22 @@
 
                     <TextView
                         android:layout_width="fill_parent"
+<<<<<<< HEAD
                         android:layout_height="50dp"
+=======
+                        android:layout_height="match_parent"
+>>>>>>> origin/master
                         android:layout_weight="0.2"
                         android:background="@color/primary_light"
                         android:gravity="center_horizontal"
                         android:padding="5dp"
                         android:text="Wednesday"
                         android:textColor="@color/cardview_dark_background"
+<<<<<<< HEAD
                         android:textSize="30sp" />
+=======
+                        android:textSize="17sp" />
+>>>>>>> origin/master
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -231,8 +320,12 @@
                         android:background="@color/yellow_material"
                         android:gravity="center_horizontal"
                         android:padding="5dp"
+<<<<<<< HEAD
                         android:text="0900 - 1200"
                         android:textSize="30sp"/>
+=======
+                        android:text="0900 - 1200" />
+>>>>>>> origin/master
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -241,8 +334,12 @@
                         android:background="@color/yellow_material"
                         android:gravity="center_horizontal"
                         android:padding="5dp"
+<<<<<<< HEAD
                         android:text="1400 - 1700"
                         android:textSize="30sp" />
+=======
+                        android:text="1400 - 1700" />
+>>>>>>> origin/master
 
 
                 </LinearLayout>
@@ -265,14 +362,22 @@
 
                     <TextView
                         android:layout_width="fill_parent"
+<<<<<<< HEAD
                         android:layout_height="50dp"
+=======
+                        android:layout_height="match_parent"
+>>>>>>> origin/master
                         android:layout_weight="0.2"
                         android:background="@color/primary_light"
                         android:gravity="center_horizontal"
                         android:padding="5dp"
                         android:text="Thursday"
                         android:textColor="@color/cardview_dark_background"
+<<<<<<< HEAD
                         android:textSize="30sp"/>
+=======
+                        android:textSize="17sp" />
+>>>>>>> origin/master
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -281,8 +386,12 @@
                         android:background="@color/yellow_material"
                         android:gravity="center_horizontal"
                         android:padding="5dp"
+<<<<<<< HEAD
                         android:text="0900 - 1200"
                         android:textSize="30sp"/>
+=======
+                        android:text="0900 - 1200" />
+>>>>>>> origin/master
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -291,8 +400,12 @@
                         android:background="@color/yellow_material"
                         android:gravity="center_horizontal"
                         android:padding="5dp"
+<<<<<<< HEAD
                         android:text="1400 - 1700"
                         android:textSize="30sp"/>
+=======
+                        android:text="1400 - 1700" />
+>>>>>>> origin/master
 
 
                 </LinearLayout>
@@ -315,24 +428,40 @@
 
                     <TextView
                         android:layout_width="fill_parent"
+<<<<<<< HEAD
                         android:layout_height="50dp"
+=======
+                        android:layout_height="match_parent"
+>>>>>>> origin/master
                         android:layout_weight="0.2"
                         android:background="@color/primary_light"
                         android:gravity="center_horizontal"
                         android:padding="5dp"
                         android:text="Friday"
                         android:textColor="@color/cardview_dark_background"
+<<<<<<< HEAD
                         android:textSize="30sp" />
 
                     <TextView
                         android:layout_width="fill_parent"
                         android:layout_height="50dp"
+=======
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+>>>>>>> origin/master
                         android:layout_weight="0.2"
                         android:background="@color/yellow_material"
                         android:gravity="center_horizontal"
                         android:padding="5dp"
+<<<<<<< HEAD
                         android:text="0900 - 1200"
                         android:textSize="30sp"/>
+=======
+                        android:text="0900 - 1200" />
+>>>>>>> origin/master
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -341,8 +470,12 @@
                         android:background="@color/yellow_material"
                         android:gravity="center_horizontal"
                         android:padding="5dp"
+<<<<<<< HEAD
                         android:text="1400 - 1700"
                         android:textSize="30sp"/>
+=======
+                        android:text="1400 - 1700" />
+>>>>>>> origin/master
 
 
                 </LinearLayout>
@@ -365,14 +498,22 @@
 
                     <TextView
                         android:layout_width="fill_parent"
+<<<<<<< HEAD
                         android:layout_height="50dp"
+=======
+                        android:layout_height="match_parent"
+>>>>>>> origin/master
                         android:layout_weight="0.2"
                         android:background="@color/primary_light"
                         android:gravity="center_horizontal"
                         android:padding="5dp"
                         android:text="Saturday"
                         android:textColor="@color/cardview_dark_background"
+<<<<<<< HEAD
                         android:textSize="30sp" />
+=======
+                        android:textSize="17sp" />
+>>>>>>> origin/master
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -390,8 +531,12 @@
                         android:background="@color/red_material"
                         android:gravity="center_horizontal"
                         android:padding="5dp"
+<<<<<<< HEAD
                         android:text=""
                         android:textSize="30sp"/>
+=======
+                        android:text="" />
+>>>>>>> origin/master
 
 
                 </LinearLayout>
@@ -402,13 +547,21 @@
             <Button
                 android:id="@+id/book"
                 android:layout_width="match_parent"
+<<<<<<< HEAD
                 android:layout_height="90dp"
+=======
+                android:layout_height="wrap_content"
+>>>>>>> origin/master
                 android:layout_marginTop="15dp"
                 android:background="@drawable/btnshape"
                 android:fontFamily="sans-serif"
                 android:text="Book an Appointment"
                 android:textColor="@color/icons"
+<<<<<<< HEAD
                 android:textSize="30sp"
+=======
+                android:textSize="16sp"
+>>>>>>> origin/master
                 android:textStyle="bold" />
 
             <TextView
@@ -418,7 +571,11 @@
                 android:layout_marginTop="5dp"
                 android:padding="5dp"
                 android:text=""
+<<<<<<< HEAD
                 android:textSize="30sp" />
+=======
+                android:textSize="18sp" />
+>>>>>>> origin/master
 
 
         </LinearLayout>

@@ -106,7 +106,14 @@ public class PatientActivity extends Activity {
             }
         });
 
-
+        // Appointment Cardview click event
+        jcardpappoint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent appoint= new Intent(PatientActivity.this,AppointmentActivity.class);
+                startActivity(appoint);
+            }
+        });
 
     }
 
