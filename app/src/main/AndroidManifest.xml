@@ -17,7 +17,6 @@
         <activity android:name=".activity.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -32,8 +31,6 @@
             android:name=".activity.LoginActivity"
             android:theme="@style/MyMaterialTheme"></activity>
 
-        <!-- Activity connections of Amsler Test -->
-
         <!-- Activity connections of Doctor Dashboard Activity -->
         <activity
             android:name=".activity.DoctorActivity"
@@ -43,12 +40,24 @@
         <activity
             android:name=".activity.PatientActivity"
             android:theme="@style/MyMaterialTheme"></activity>
+
+        <!-- Activity connections of Amsler test -->
         <activity
             android:name=".activity.AmslerTest"
+            android:screenOrientation="portrait"
             android:theme="@style/MyMaterialTheme"></activity>
+
+        <!-- Activity connections of Patient chat Activity -->
         <activity
             android:name=".activity.ChatActivity"
             android:theme="@style/MyMaterialTheme"></activity>
+
+
+        <!-- Activity connections of Login screen -->
+        <activity
+            android:name=".activity.AppointmentActivity"
+            android:theme="@style/MyMaterialTheme"></activity>
+
     </application>
 
 </manifest>

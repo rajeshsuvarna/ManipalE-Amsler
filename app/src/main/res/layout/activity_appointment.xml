@@ -37,14 +37,14 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="5dp"
-                    android:paddingTop="5dp"
-                    android:text="Week Schedule : Dr. "
-                    android:textSize="17sp" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="Week Schedule : Dr. "
+                android:textSize="17sp" />
 
                 <TextView
                     android:layout_width="wrap_content"

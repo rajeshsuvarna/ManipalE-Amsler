@@ -112,7 +112,7 @@
         <ImageView
             android:id="@+id/imageViewp3"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="115dp"
             android:layout_weight="1"
             android:src="@drawable/chat"/>
 
@@ -157,7 +157,7 @@
         <ImageView
             android:id="@+id/imageViewp4"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="115dp"
             android:layout_weight="1"
             android:src="@drawable/medhis"/>
 
