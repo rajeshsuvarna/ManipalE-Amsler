@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.fourmob.datetimepicker.date.DatePickerDialog;
 import com.fourmob.datetimepicker.date.DatePickerDialog.OnDateSetListener;
@@ -46,7 +45,7 @@ public class AppointmentActivity extends AppCompatActivity implements OnDateSetL
             @Override
             public void onClick(View v) {
                 datePickerDialog.setVibrate(isVibrate());
-                datePickerDialog.setYearRange(1950, 2028);
+                datePickerDialog.setYearRange(2016, 2016);
                 datePickerDialog.setCloseOnSingleTapDay(isCloseOnSingleTapDay());
                 datePickerDialog.show(getSupportFragmentManager(), DATEPICKER_TAG);
 
@@ -95,7 +94,7 @@ public class AppointmentActivity extends AppCompatActivity implements OnDateSetL
 
         jmsg.setText("Appointment book on " + date + " at " + time);
 
-        Snackbar.make(coordinatorLayout, "You will be notified soon", Snackbar.LENGTH_SHORT).show();
+        Snackbar.make(coordinatorLayout, "You will be notified soon", Snackbar.LENGTH_LONG).show();
     }
 }
 
