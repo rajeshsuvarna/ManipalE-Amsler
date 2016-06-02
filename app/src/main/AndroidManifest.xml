@@ -24,21 +24,25 @@
         <!-- Activity connections of Splash screen -->
         <activity
             android:name=".Splashscreen"
+            android:screenOrientation="portrait"
             android:theme="@style/MyMaterialTheme"></activity>
 
         <!-- Activity connections of Login screen -->
         <activity
             android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/MyMaterialTheme"></activity>
 
         <!-- Activity connections of Doctor Dashboard Activity -->
         <activity
             android:name=".activity.DoctorActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/MyMaterialTheme"></activity>
 
         <!-- Activity connections of Patient Dashboard Activity -->
         <activity
             android:name=".activity.PatientActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/MyMaterialTheme"></activity>
 
         <!-- Activity connections of Amsler test -->
@@ -50,12 +54,14 @@
         <!-- Activity connections of Patient chat Activity -->
         <activity
             android:name=".activity.ChatActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/MyMaterialTheme"></activity>
 
 
         <!-- Activity connections of Login screen -->
         <activity
             android:name=".activity.AppointmentActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/MyMaterialTheme"></activity>
 
     </application>
