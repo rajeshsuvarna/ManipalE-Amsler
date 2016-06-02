@@ -35,7 +35,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/ic_launcher"/>
+                android:src="@drawable/viewpat"/>
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -79,7 +79,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_launcher"/>
+            android:src="@drawable/appoint"/>
 
         <LinearLayout
             android:layout_width="0dp"
@@ -123,7 +123,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/ic_launcher"/>
+                android:src="@drawable/medhis"/>
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -169,7 +169,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/ic_launcher"/>
+                android:src="@drawable/docprofile"/>
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -216,7 +216,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/ic_launcher"/>
+                android:src="@drawable/logout"/>
 
             <LinearLayout
                 android:layout_width="0dp"

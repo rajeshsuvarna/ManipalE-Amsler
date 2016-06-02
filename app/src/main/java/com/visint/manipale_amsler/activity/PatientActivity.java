@@ -85,6 +85,18 @@ public class PatientActivity extends Activity {
                 startActivity(amslertest);
             }
         });
+
+
+
+        // Book an appointment with doctor Cardview click event
+        jcardpappoint.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent patdocappoint= new Intent(PatientActivity.this,AppointmentActivity.class);
+                startActivity(patdocappoint);
+            }
+        });
    // Logout Cardview click event
         jcardplogout.setOnClickListener(new View.OnClickListener() {
 
@@ -106,7 +118,6 @@ public class PatientActivity extends Activity {
         session.setLogin(false);
 
         db.deleteUsers();
-
         // Launching the login activity
         Intent intent = new Intent(PatientActivity.this, LoginActivity.class);
         startActivity(intent);
