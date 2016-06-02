@@ -31,7 +31,8 @@
                 <ImageView
                     android:id="@+id/imageView1"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="5dp"
                     android:layout_weight="1"
                     android:src="@drawable/viewpat"/>
 
@@ -77,8 +78,9 @@
                 <ImageView
                     android:id="@+id/imageView2"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="72dp"
                     android:layout_weight="1"
+                    android:layout_marginTop="5dp"
                     android:src="@drawable/appoint"/>
 
                 <LinearLayout
@@ -125,8 +127,9 @@
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="72dp"
                     android:layout_weight="1"
+                    android:layout_marginTop="5dp"
                     android:src="@drawable/medhis"/>
 
                 <LinearLayout
