@@ -99,6 +99,7 @@ public class AmslerTest extends AppCompatActivity {
         jclear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                rbtn[1].setChecked(true);
                 clearCanvas(v);
                 clearDistort();
                 //radioController(1, 5);
@@ -120,6 +121,8 @@ public class AmslerTest extends AppCompatActivity {
                     jclear.setVisibility(View.VISIBLE);
                     jseek.setVisibility(View.VISIBLE);
                     jrgroup.setVisibility(View.VISIBLE);
+
+                    rbtn[1].setChecked(true);
 
                     rogueState = "FINISH";
                     jrogue.setText("FINISH");
@@ -391,10 +394,13 @@ public class AmslerTest extends AppCompatActivity {
         bmp.compress(Bitmap.CompressFormat.JPEG, 100, baos);
         byte[] imageBytes = baos.toByteArray();
         String encodedImage = Base64.encodeToString(imageBytes, Base64.DEFAULT);
+
+        //Toast.makeText(AmslerTest.this, encodedImage, Toast.LENGTH_LONG).show();
+
         return encodedImage;
     }
 
-    private void uploadImage(final String a_score, final String image, final String f_name) {
+    private void uploadImage(final String a_score,final String image,final String f_name) {
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, AppConfig.UPLOAD_TEST_URL,
                 new Response.Listener<String>() {

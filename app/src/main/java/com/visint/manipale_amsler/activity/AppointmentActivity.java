@@ -45,7 +45,7 @@ public class AppointmentActivity extends AppCompatActivity implements OnDateSetL
             @Override
             public void onClick(View v) {
                 datePickerDialog.setVibrate(isVibrate());
-                datePickerDialog.setYearRange(2016, 2016);
+                datePickerDialog.setYearRange(2015, 2016);
                 datePickerDialog.setCloseOnSingleTapDay(isCloseOnSingleTapDay());
                 datePickerDialog.show(getSupportFragmentManager(), DATEPICKER_TAG);
 
