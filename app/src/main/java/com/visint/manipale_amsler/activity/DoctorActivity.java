@@ -78,6 +78,10 @@ public class DoctorActivity extends Activity {
 
     }
 
+    // Medical History Cardview click event
+
+
+
     /**
      * Logging out the user. Will set isLoggedIn flag to false in shared
      * preferences Clears the user data from sqlite users table

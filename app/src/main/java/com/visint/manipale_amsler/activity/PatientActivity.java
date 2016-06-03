@@ -115,6 +115,17 @@ public class PatientActivity extends Activity {
             }
         });
 
+
+        // Medical History Cardview click event
+        jcardphistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent medhistory= new Intent(PatientActivity.this,MedicalHistory.class);
+                startActivity(medhistory);
+            }
+        });
+
+
     }
 
     /**

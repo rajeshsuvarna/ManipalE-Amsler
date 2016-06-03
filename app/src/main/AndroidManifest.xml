@@ -58,6 +58,12 @@
             android:name=".activity.AppointmentActivity"
             android:theme="@style/MyMaterialTheme"></activity>
 
+
+        <!-- Activity connections of Medical History screen -->
+        <activity
+            android:name=".activity.MedicalHistory"
+            android:theme="@style/MyMaterialTheme"></activity>
+
     </application>
 
 </manifest>
