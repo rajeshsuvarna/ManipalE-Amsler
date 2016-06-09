@@ -1,5 +1,6 @@
 package com.visint.manipale_amsler.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
@@ -96,5 +97,15 @@ public class AppointmentActivity extends AppCompatActivity implements OnDateSetL
 
         Snackbar.make(coordinatorLayout, "You will be notified soon", Snackbar.LENGTH_LONG).show();
     }
+    // Back pressed code to go to Patient dashboard
+    @Override
+    public void onBackPressed()
+    {
+        Intent appointbackpress=new Intent(AppointmentActivity.this,PatientActivity.class);
+        startActivity(appointbackpress);
+        finish();
+    }
+
+
 }
 

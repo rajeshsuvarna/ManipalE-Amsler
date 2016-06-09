@@ -41,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Chief Complaint "
+                android:id="@+id/Chief_Complaint"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -65,7 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Complaint Date"
+                android:id="@+id/Complaint_Date"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -90,7 +90,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Symptoms"
+                android:id="@+id/Symptoms"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -115,7 +115,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Location"
+                android:id="@+id/Location"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -140,7 +140,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Severity"
+                android:id="@+id/Severity"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -165,7 +165,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Nature Of Onset"
+                android:id="@+id/Nature_Of_Onset"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -188,7 +188,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Duration"
+                android:id="@+id/Duration"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -212,7 +212,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Frequency"
+                android:id="@+id/Frequency"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -236,7 +236,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Excerabation"
+                android:id="@+id/Excerabation"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -260,7 +260,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Accompanying Signs"
+                android:id="@+id/Accompanying_Signs"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -283,7 +283,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Secondary Compaint"
+                android:id="@+id/Secondary_Compaint"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -306,7 +306,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Ocular History"
+                android:id="@+id/Ocular_History"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -329,7 +329,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Medical History"
+                android:id="@+id/Medical_History"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -352,7 +352,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Medication History"
+                android:id="@+id/Medication_History"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -375,34 +375,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Allergy History"
+                android:id="@+id/Allergy_History"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingTop="25dp"
-                android:text="Excerabation "
-                android:paddingLeft="15dp"
-                android:layout_weight="1"
-                android:textSize="40sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingTop="40dp"
-                android:text="Excerabation"
-                android:layout_weight="1"
-                android:textSize="40sp" />
-
-        </LinearLayout>
 
 
         <LinearLayout
@@ -422,7 +400,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Family Ocular History"
+                android:id="@+id/FamilyOcularHistory"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -445,7 +423,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Family Medical History"
+                android:id="@+id/FamilyMedicalHistory"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -468,9 +446,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Mental Status"
+                android:id="@+id/MentalStatus"
                 android:layout_weight="1"
-                android:textSize="40sp" />
+                android:textSize="40sp"/>
 
         </LinearLayout>
 
@@ -516,7 +494,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Test Date "
+                android:id="@+id/TestDate"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -530,7 +508,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="25dp"
-                android:text="BVA OD* "
+                android:text="BVA OD"
                 android:paddingLeft="15dp"
                 android:layout_weight="1"
                 android:textSize="40sp" />
@@ -539,7 +517,31 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="BVA OD*"
+                android:id="@+id/BVAOD"
+                android:layout_weight="1"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="25dp"
+                android:text="BVA OS"
+                android:paddingLeft="15dp"
+                android:layout_weight="1"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="40dp"
+                android:id="@+id/BVAOS"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -562,7 +564,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Puplis"
+                android:id="@+id/Puplis"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -585,7 +587,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="EOM's"
+                android:id="@+id/EOMs"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -608,7 +610,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Confrontation Field"
+                android:id="@+id/ConfrontationField"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -631,7 +633,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Slit Lamp Lids"
+                android:id="@+id/SlitLampLids"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -655,7 +657,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="IOPs"
+                android:id="@+id/IOPs"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -679,7 +681,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="15dp"
-                android:text="Fundus OD"
+                android:id="@+id/FundusOD"
                 android:layout_weight="1"
                 android:textSize="40dp" />
 
@@ -703,7 +705,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Fundus OS"
+                android:id="@+id/FundusOS"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -727,7 +729,32 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Blood Pressure"
+                android:id="@+id/BloodPressure"
+                android:layout_weight="1"
+                android:textSize="40sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="40dp"
+                android:text="Pulse"
+                android:paddingLeft="15dp"
+                android:layout_weight="1"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="40dp"
+                android:id="@+id/Pulse"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
@@ -751,35 +778,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="40dp"
-                android:text="Cholestrol"
+                android:id="@+id/Cholestrol"
                 android:layout_weight="1"
                 android:textSize="40sp" />
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingTop="40dp"
-                android:text="Blood Pressure"
-                android:paddingLeft="15dp"
-                android:layout_weight="1"
-                android:textSize="40sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingTop="40dp"
-                android:text="Blood Pressure"
-                android:layout_weight="1"
-                android:textSize="40sp" />
-
-        </LinearLayout>
 
 
 

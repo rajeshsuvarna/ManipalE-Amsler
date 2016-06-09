@@ -43,7 +43,7 @@
                 android:id="@+id/tvpamslertest"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Take a Amsler test"
+                android:text="@string/take_a_amsler_test"
                 android:textColor="@color/primary_text"
                 android:textAppearance="?android:attr/textAppearanceLarge"/>
         </LinearLayout>
@@ -88,7 +88,7 @@
                     android:id="@+id/tvpappoint"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Book an appointment"
+                    android:text="@string/book_an_appointment"
                     android:textColor="@color/primary_text"
                     android:textAppearance="?android:attr/textAppearanceLarge"/>
             </LinearLayout>
@@ -136,7 +136,7 @@
                 android:id="@+id/tvpchat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Chat with doctor"
+                android:text="@string/chat_with_doctor"
                 android:textColor="@color/primary_text"
                 android:textAppearance="?android:attr/textAppearanceLarge"/>
         </LinearLayout>
@@ -184,7 +184,7 @@
                 android:id="@+id/medphistory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Medical History"
+                android:text="@string/medical_history"
                 android:textColor="@color/primary_text"
                 android:textAppearance="?android:attr/textAppearanceLarge"/>
         </LinearLayout>
@@ -230,7 +230,7 @@
                 android:id="@+id/tvplog"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Logout"
+                android:text="@string/logout"
                 android:textColor="@color/primary_text"
                 android:textAppearance="?android:attr/textAppearanceLarge"/>
         </LinearLayout>

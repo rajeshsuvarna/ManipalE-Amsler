@@ -17,7 +17,7 @@
             android:id="@+id/signature_canvas"
             android:layout_width="match_parent"
             android:layout_height="375dp"
-            android:background="@drawable/amslergrid"
+            android:background="@drawable/amsler_boundary"
             android:textColor="#FFFFFF" />
 
         <SeekBar
@@ -42,28 +42,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.25"
-                    android:text="Dark Spot" />
+                    android:text="@string/dark_spot" />
 
                 <RadioButton
                     android:id="@+id/blur"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.25"
-                    android:text="Blur" />
+                    android:text="@string/blur" />
 
                 <RadioButton
                     android:id="@+id/wavy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.25"
-                    android:text="Wavy" />
+                    android:text="@string/wavy" />
 
                 <RadioButton
                     android:id="@+id/distort"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.25"
-                    android:text="Distort" />
+                    android:text="@string/distort" />
 
             </RadioGroup>
 
@@ -82,7 +82,7 @@
                 android:layout_marginLeft="2dp"
                 android:layout_weight="0.5"
                 android:background="@color/primary"
-                android:text="START TEST"
+                android:text="@string/start_test"
                 android:textColor="@color/primary_text"
                 android:textSize="14sp" />
 
@@ -93,7 +93,7 @@
                 android:layout_marginLeft="2dp"
                 android:layout_weight="0.5"
                 android:background="@color/primary"
-                android:text="CLEAR"
+                android:text="@string/clear"
                 android:textColor="@color/primary_text"
                 android:textSize="14sp" />
 

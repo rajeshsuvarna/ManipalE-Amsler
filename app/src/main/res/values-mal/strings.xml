@@ -1,0 +1,61 @@
+<resources>
+        <string name="app_name">Manipal  E-Amsler</string>
+        <string name="welcome">Welcome</string>
+        <string name="btn_logout">LOGOUT</string>
+        <string name="title_activity_welcome">Home Screen</string>
+        <string name="next">NEXT</string>
+        <string name="skip">SKIP</string>
+        <string name="start">GOT IT</string>
+
+        <string name="slide_1_title">Manipal E-Amlser</string>
+        <string name="slide_1_desc">The easiest way to monitor vision and test for vision loss</string>
+
+        <string name="slide_2_title">Hello</string>
+        <string name="slide_2_desc">First smart phone based vision monitor for macular degeneration</string>
+
+        <string name="slide_3_title">Great</string>
+        <string name="slide_3_desc">Your eye show strength of your soul</string>
+
+        <string name="slide_4_title">Magic</string>
+        <string name="slide_4_desc">One eye sees, the other feels</string>
+
+        <string name="slide_5_title">Cool</string>
+
+        <string name="slide_5_desc">You cant buy happiness, but you can buy new glasses!</string>
+        <string name="start_test">ആരംഭം ടെസ്റ്റ് </string>
+        <string name="clear">മായ്ക്കുക</string>
+        <string name="dark_spot">ഇരുണ്ട സ്പോട്ട്
+</string>
+        <string name="blur">ഇഫക്റ്റ്</string>
+        <string name="wavy">അലകളുടെ രൂപത്തിലുള്ള
+</string>
+        <string name="distort">വളച്ചൊടിച്ച്</string>
+        <string name="book_an_appointment">ഒരു അപ്പോയിന്റ്മെന്റ് ബുക്ക്</string>
+        <string name="week_schedule_dr">ആഴ്ചത്തെ പട്ടിക : ഡോ</string>
+        <string name="subramanyam">Subramanyam</string>
+        <string name="days">ദിവസം</string>
+        <string name="morning">മോണിംഗ്</string>
+        <string name="afternoon">ഉച്ചകഴിഞ്ഞ്</string>
+        <string name="monday">തിങ്കളാഴ്ച</string>
+        <string name="_0900_1200">0900 - 1200</string>
+        <string name="_1400_1700">1400 - 1700</string>
+        <string name="tuesday">ചൊവ്വാഴ്ച</string>
+        <string name="wednesday">ബുധനാഴ്ച</string>
+        <string name="thursday">വ്യാഴാഴ്ച</string>
+        <string name="friday">വെള്ളിയാഴ്ച</string>
+        <string name="saturday">ശനിയാഴ്ച</string>
+        <string name="type_message_here">ഇനം ഇവിടെ സന്ദേശം
+</string>
+        <string name="send_message">കാണുക രോഗികൾക്ക് </string>
+        <string name="view_patients">View Patients</string>
+        <string name="view_appointments">കാണുക നിയമന </string>
+        <string name="medical_history">മെഡിക്കൽ ഹിസ്റ്ററി </string>
+        <string name="view_profile">വ്യൂ പ്രൊഫൈൽ </string>
+        <string name="logout">வெளியேறு </string>
+        <string name="email">Email</string>
+        <string name="password">கடவுச்சொல் </string>
+        <string name="login">Login</string>
+        <string name="take_a_amsler_test">Take a Amsler test</string>
+        <string name="chat_with_doctor">Chat with doctor</string>
+</resources>
+

@@ -51,7 +51,7 @@
                         android:id="@+id/txtmessage"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Type message here"
+                        android:hint="@string/type_message_here"
                         android:lines="5"
                         android:textSize="16sp" />
                 </android.support.design.widget.TextInputLayout>
@@ -64,7 +64,7 @@
                     android:background="@drawable/btnshape"
                     android:fontFamily="sans-serif"
 
-                    android:text="Send Message"
+                    android:text="@string/send_message"
                     android:textColor="@color/icons"
                     android:textSize="16sp"
                     android:textStyle="bold" />

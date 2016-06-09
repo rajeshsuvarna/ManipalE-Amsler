@@ -5,8 +5,13 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
@@ -22,6 +27,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 
@@ -32,7 +38,7 @@ import com.visint.manipale_amsler.helper.SQLiteHandler;
 import com.visint.manipale_amsler.helper.SessionManager;
 
 
-public class LoginActivity extends Activity {
+public class LoginActivity extends AppCompatActivity {
     private static final String TAG = "LoginActivity";
     private static final int REQUEST_SIGNUP = 0;
 
@@ -81,7 +87,6 @@ public class LoginActivity extends Activity {
             public void onClick(View view) {
                 String username = inputUsername.getText().toString().trim();
                 String password = inputPassword.getText().toString().trim();
-
                 InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
                 imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
                 // Check for empty data in the form
@@ -99,6 +104,105 @@ public class LoginActivity extends Activity {
 
         });
     }
+
+
+
+    //Multi language menu inflater
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.menu, menu);
+
+        //  getMenuInflater().inflate(R.menu.lang_setting_menu, menu);
+        //Toast.makeText(getApplicationContext(),"Menu inflates",Toast.LENGTH_LONG).show();
+        //  return true;
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    //Multi language Menu options
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        switch (item.getItemId()) {
+            case R.id.eng:
+              //  Toast.makeText(getApplicationContext(),"English selected",Toast.LENGTH_LONG).show();
+                String languageToLoad = "en"; // your language
+                Locale locale = new Locale(languageToLoad);
+                Locale.setDefault(locale);
+                Configuration config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(config,getBaseContext().getResources().getDisplayMetrics());
+                this.setContentView(R.layout.activity_login);
+                this.recreate();
+                break;
+            case R.id.hin:
+               // Toast.makeText(getApplicationContext(),"Hindi selected",Toast.LENGTH_LONG).show();
+                languageToLoad = "hi"; // your language
+                locale = new Locale(languageToLoad);
+                Locale.setDefault(locale);
+                config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(config,getBaseContext().getResources().getDisplayMetrics());
+                this.setContentView(R.layout.activity_login);
+                this.recreate();
+                break;
+            case R.id.kann:
+              //  Toast.makeText(getApplicationContext(),"Kannada selected",Toast.LENGTH_LONG).show();
+                languageToLoad = "kan"; // your language
+                locale = new Locale(languageToLoad);
+                Locale.setDefault(locale);
+                config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(config,
+                        getBaseContext().getResources().getDisplayMetrics());
+                this.setContentView(R.layout.activity_login);
+                this.recreate();
+                break;
+            case R.id.telu:
+              //  Toast.makeText(getApplicationContext(),"Telugu selected",Toast.LENGTH_LONG).show();
+                languageToLoad = "tel"; // your language
+                locale = new Locale(languageToLoad);
+                Locale.setDefault(locale);
+                config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(config,
+                        getBaseContext().getResources().getDisplayMetrics());
+                this.setContentView(R.layout.activity_login);
+                this.recreate();
+                break;
+            case R.id.tami:
+                //Toast.makeText(getApplicationContext(),"Tamil selected",Toast.LENGTH_LONG).show();
+                languageToLoad = "tam"; // your language
+                locale = new Locale(languageToLoad);
+                Locale.setDefault(locale);
+                config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(config,
+                        getBaseContext().getResources().getDisplayMetrics());
+                this.setContentView(R.layout.activity_login);
+                this.recreate();
+                break;
+            case R.id.malya:
+               // Toast.makeText(getApplicationContext(),"Malyalam selected",Toast.LENGTH_LONG).show();
+                languageToLoad = "mal"; // your language
+                locale = new Locale(languageToLoad);
+                Locale.setDefault(locale);
+                config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(config,
+                        getBaseContext().getResources().getDisplayMetrics());
+                this.setContentView(R.layout.activity_login);
+                this.recreate();
+                break;
+            default:
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 
     /**
      * function to verify login details in mysql db
@@ -220,4 +324,9 @@ public class LoginActivity extends Activity {
         if (pDialog.isShowing())
             pDialog.dismiss();
     }
+
+
+
+
+
 }

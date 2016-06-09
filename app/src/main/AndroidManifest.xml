@@ -34,6 +34,7 @@
         <!-- Activity connections of Doctor Dashboard Activity -->
         <activity
             android:name=".activity.DoctorActivity"
+            android:noHistory="true"
             android:theme="@style/MyMaterialTheme"></activity>
 
         <!-- Activity connections of Patient Dashboard Activity -->
@@ -45,11 +46,13 @@
         <activity
             android:name=".activity.AmslerTest"
             android:screenOrientation="portrait"
+            android:noHistory="true"
             android:theme="@style/MyMaterialTheme"></activity>
 
         <!-- Activity connections of Patient chat Activity -->
         <activity
             android:name=".activity.ChatActivity"
+            android:noHistory="true"
             android:theme="@style/MyMaterialTheme"></activity>
 
 
@@ -62,6 +65,10 @@
         <!-- Activity connections of Medical History screen -->
         <activity
             android:name=".activity.MedicalHistory"
+            android:theme="@style/MyMaterialTheme"></activity>
+
+        <!-- Activity connections of Medical History screen -->
+        <activity android:name=".activity.DoctorProfile"
             android:theme="@style/MyMaterialTheme"></activity>
 
     </application>

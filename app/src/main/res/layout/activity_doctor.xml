@@ -48,7 +48,7 @@
                         android:id="@+id/tvdpatient"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="View Patients"
+                        android:text="@string/view_patients"
                         android:textColor="@color/primary_text"
                         android:textAppearance="?android:attr/textAppearanceLarge"/>
                 </LinearLayout>
@@ -95,7 +95,7 @@
                         android:id="@+id/tvdappoint"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="View Appointments"
+                        android:text="@string/view_appointments"
                         android:textColor="@color/primary_text"
                         android:textAppearance="?android:attr/textAppearanceLarge"/>
                 </LinearLayout>
@@ -144,7 +144,7 @@
                         android:id="@+id/tvdmedhis"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Medical History"
+                        android:text="@string/medical_history"
                         android:textColor="@color/primary_text"
                         android:textAppearance="?android:attr/textAppearanceLarge"/>
                 </LinearLayout>
@@ -191,7 +191,7 @@
                         android:id="@+id/tvdprof"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="View Profile"
+                        android:text="@string/view_profile"
                         android:textColor="@color/primary_text"
                         android:textAppearance="?android:attr/textAppearanceLarge"/>
 
@@ -238,7 +238,7 @@
                         android:id="@+id/tvdlogout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Logout"
+                        android:text="@string/logout"
                         android:textColor="@color/primary_text"
                         android:textAppearance="?android:attr/textAppearanceLarge"/>
                 </LinearLayout>

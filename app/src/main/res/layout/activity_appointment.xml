@@ -43,7 +43,7 @@
                 android:paddingBottom="5dp"
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
-                android:text="Week Schedule : Dr. "
+                android:text="@string/week_schedule_dr"
                 android:textSize="17sp" />
 
                 <TextView
@@ -55,7 +55,7 @@
                     android:paddingBottom="5dp"
                     android:paddingTop="5dp"
 
-                    android:text="Subramanyam"
+                    android:text="@string/subramanyam"
                     android:textSize="17sp" />
 
 
@@ -75,7 +75,7 @@
                     android:background="@color/cardview_light_background"
                     android:gravity="center_horizontal"
                     android:padding="5dp"
-                    android:text="Days"
+                    android:text="@string/days"
                     android:textColor="@color/primary_text"
                     android:textSize="17sp" />
 
@@ -86,7 +86,7 @@
                     android:background="@color/cardview_light_background"
                     android:gravity="center_horizontal"
                     android:padding="5dp"
-                    android:text="Morning"
+                    android:text="@string/morning"
                     android:textSize="17sp" />
 
                 <TextView
@@ -96,7 +96,7 @@
                     android:background="@color/cardview_light_background"
                     android:gravity="center_horizontal"
                     android:padding="5dp"
-                    android:text="Afternoon"
+                    android:text="@string/afternoon"
                     android:textSize="17sp" />
 
 
@@ -122,7 +122,7 @@
                         android:background="@color/primary_light"
                         android:gravity="center_horizontal"
                         android:padding="5dp"
-                        android:text="Monday"
+                        android:text="@string/monday"
                         android:textColor="@color/cardview_dark_background"
                         android:textSize="17sp" />
 
@@ -133,7 +133,7 @@
                         android:background="@color/yellow_material"
                         android:gravity="center_horizontal"
                         android:padding="5dp"
-                        android:text="0900 - 1200" />
+                        android:text="@string/_0900_1200" />
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -142,7 +142,7 @@
                         android:background="@color/yellow_material"
                         android:gravity="center_horizontal|center_vertical"
                         android:padding="5dp"
-                        android:text="1400 - 1700" />
+                        android:text="@string/_1400_1700" />
 
 
                 </LinearLayout>
@@ -170,7 +170,7 @@
                         android:background="@color/primary_light"
                         android:gravity="center_horizontal"
                         android:padding="5dp"
-                        android:text="Tuesday"
+                        android:text="@string/tuesday"
                         android:textColor="@color/cardview_dark_background"
                         android:textSize="17sp" />
 
@@ -218,7 +218,7 @@
                         android:background="@color/primary_light"
                         android:gravity="center_horizontal"
                         android:padding="5dp"
-                        android:text="Wednesday"
+                        android:text="@string/wednesday"
                         android:textColor="@color/cardview_dark_background"
                         android:textSize="17sp" />
 
@@ -266,7 +266,7 @@
                         android:background="@color/primary_light"
                         android:gravity="center_horizontal"
                         android:padding="5dp"
-                        android:text="Thursday"
+                        android:text="@string/thursday"
                         android:textColor="@color/cardview_dark_background"
                         android:textSize="17sp" />
 
@@ -314,7 +314,7 @@
                         android:background="@color/primary_light"
                         android:gravity="center_horizontal"
                         android:padding="5dp"
-                        android:text="Friday"
+                        android:text="@string/friday"
                         android:textColor="@color/cardview_dark_background"
                         android:textSize="17sp" />
 
@@ -362,7 +362,7 @@
                         android:background="@color/primary_light"
                         android:gravity="center_horizontal"
                         android:padding="5dp"
-                        android:text="Saturday"
+                        android:text="@string/saturday"
                         android:textColor="@color/cardview_dark_background"
                         android:textSize="17sp" />
 
@@ -397,7 +397,7 @@
                 android:layout_marginTop="15dp"
                 android:background="@drawable/btnshape"
                 android:fontFamily="sans-serif"
-                android:text="Book an Appointment"
+                android:text="@string/book_an_appointment"
                 android:textColor="@color/icons"
                 android:textSize="16sp"
                 android:textStyle="bold" />

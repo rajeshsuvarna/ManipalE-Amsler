@@ -17,7 +17,7 @@
             android:id="@+id/signature_canvas"
             android:layout_width="match_parent"
             android:layout_height="750dp"
-            android:background="@drawable/amslergrid"
+            android:background="@drawable/amsler_boundary"
             android:textColor="#FFFFFF" />
 
         <SeekBar

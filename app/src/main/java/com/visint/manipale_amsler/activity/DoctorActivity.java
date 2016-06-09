@@ -1,5 +1,7 @@
 package com.visint.manipale_amsler.activity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -66,6 +68,26 @@ public class DoctorActivity extends Activity {
       //  w.setText(type);
 
 
+        // Medical History Cardview click event
+
+      jcarddprofile.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+              Intent docprofile=new Intent(DoctorActivity.this,DoctorProfile.class);
+              startActivity(docprofile);
+          }
+      });
+
+        // Medical History Cardview click event
+
+        jcarddhistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent meddochis=new Intent(DoctorActivity.this,MedicalHistory.class);
+                startActivity(meddochis);
+
+            }
+        });
 
         // Logout cardview click event
         jcarddlogout.setOnClickListener(new View.OnClickListener() {
@@ -76,9 +98,13 @@ public class DoctorActivity extends Activity {
             }
         });
 
+
+
+
+
     }
 
-    // Medical History Cardview click event
+
 
 
 

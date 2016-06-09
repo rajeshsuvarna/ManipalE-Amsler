@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/eng"
+        android:title="English"/>
+    <item
+        android:id="@+id/hin"
+        android:title="Hindi"/>
+    <item
+        android:id="@+id/kann"
+        android:title="Kannada"/>
+    <item
+        android:id="@+id/telu"
+        android:title="Telugu "/>
+    <item
+        android:id="@+id/tami"
+        android:title="Tamil "/>
+
+    <item
+        android:id="@+id/malya"
+        android:title="Malyalam "/>
+</menu>

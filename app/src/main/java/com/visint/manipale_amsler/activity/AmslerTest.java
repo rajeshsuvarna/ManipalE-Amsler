@@ -1,6 +1,8 @@
 package com.visint.manipale_amsler.activity;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -268,8 +270,24 @@ public class AmslerTest extends AppCompatActivity {
     @Override
     public void onBackPressed() {
 
-        Intent backpressed = new Intent(AmslerTest.this, PatientActivity.class);
-        startActivity(backpressed);
+
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Are you sure you want to exit the amsler test?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        Intent backpressed = new Intent(AmslerTest.this, PatientActivity.class);
+                        startActivity(backpressed);
+                    }
+                })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+        AlertDialog alert = builder.create();
+        alert.show();
 
     }
 

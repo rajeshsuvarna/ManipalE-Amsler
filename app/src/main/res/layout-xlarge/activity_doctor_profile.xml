@@ -1,0 +1,260 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:tag="cards main container">
+
+        <!--top card view starts here-->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_dpatient"
+            android:layout_width="match_parent"
+            android:layout_height="1200dp"
+            android:layout_marginTop="20dp"
+            card_view:cardBackgroundColor="@color/icons"
+            card_view:cardElevation="8dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="450dp"
+                    android:layout_height="400dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/viewpat" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:layout_marginTop="20dp">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="40dp"
+                    android:textSize="40sp"
+                    android:text="Name: "
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/primary_text" />
+
+                <TextView
+                    android:id="@+id/docfname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="40dp"
+                    android:textSize="40sp"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/primary_text" />
+                <TextView
+                    android:id="@+id/doclname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="40dp"
+                    android:textSize="40sp"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/primary_text" />
+</LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="40dp"
+                    android:textSize="40sp"
+                    android:layout_weight="0.5"
+                    android:text="DOB: "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/primary_text" />
+                <TextView
+                    android:id="@+id/docdob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="40dp"
+                    android:textSize="40sp"
+                    android:layout_weight="0.5"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/primary_text" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="40dp"
+                    android:textSize="40sp"
+                    android:text="Gender: "
+                    android:layout_weight="0.5"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/primary_text" />
+                <TextView
+                    android:id="@+id/docgender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="40dp"
+                    android:textSize="40sp"
+                    android:layout_weight="0.5"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/primary_text" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="40dp"
+                    android:textSize="40sp"
+                    android:text="Mobile: "
+                    android:layout_weight="0.5"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/primary_text" />
+
+                <TextView
+                    android:id="@+id/docmobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="40dp"
+                    android:textSize="40sp"
+                    android:layout_weight="0.5"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/primary_text" />
+
+             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+                  <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="40dp"
+                    android:textSize="40sp"
+                    android:text="Address: "
+                    android:layout_weight="0.5"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/primary_text" />
+
+
+                <TextView
+                    android:id="@+id/docaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="40dp"
+                    android:textSize="40sp"
+                    android:layout_weight="0.5"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/primary_text" />
+
+             </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="40dp"
+                    android:textSize="40sp"
+                    android:text="Email: "
+                    android:layout_weight="0.5"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/primary_text" />
+                <TextView
+                    android:id="@+id/docemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="40dp"
+                    android:textSize="40sp"
+                    android:layout_weight="0.5"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/primary_text" />
+             </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1 ">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="40dp"
+                    android:textSize="40sp"
+                    android:layout_weight="0.5"
+                    android:text="Qualification: "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/primary_text" />
+                <TextView
+                    android:id="@+id/docqualification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="40dp"
+                    android:textSize="40sp"
+                    android:layout_weight="0.5"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/primary_text" />
+
+            </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</ScrollView>

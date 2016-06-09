@@ -1,0 +1,57 @@
+<resources>
+        <string name="app_name">Manipal  E-Amsler</string>
+        <string name="welcome">स्वागत हे </string>
+        <string name="btn_logout">लोग आउट</string>
+        <string name="title_activity_welcome">होम स्क्रीन</string>
+        <string name="next">अगला</string>
+        <string name="skip">छोड़ें</string>
+        <string name="start">समझ गया</string>
+
+        <string name="slide_1_title">Manipal E-Amlser</string>
+        <string name="slide_1_desc">The easiest way to monitor vision and test for vision loss</string>
+
+        <string name="slide_2_title">Hello</string>
+        <string name="slide_2_desc">First smart phone based vision monitor for macular degeneration</string>
+
+        <string name="slide_3_title">Great</string>
+        <string name="slide_3_desc">Your eye show strength of your soul</string>
+
+        <string name="slide_4_title">Magic</string>
+        <string name="slide_4_desc">One eye sees, the other feels</string>
+
+        <string name="slide_5_title">Cool</string>
+        <string name="slide_5_desc">You cant buy happiness, but you can buy new glasses!</string>
+        <string name="start_test">परीक्षण ले</string>
+        <string name="clear">स्पष्ट </string>
+        <string name="dark_spot">काला धब्बा</string>
+        <string name="blur">कलंक</string>
+        <string name="wavy">लहरदार</string>
+        <string name="distort">बिगाड़ना</string>
+        <string name="book_an_appointment">अपॉइंटमेंट बुक करें</string>
+        <string name="week_schedule_dr">सप्ताह कार्यक्रम : डॉ</string>
+        <string name="subramanyam">Subramanyam</string>
+        <string name="days">दिन</string>
+        <string name="morning">सुबह</string>
+        <string name="afternoon">दोपहर</string>
+        <string name="monday">सोमवार</string>
+        <string name="_0900_1200">0९00 - १२00</string>
+        <string name="_1400_1700">१४00 - १७00</string>
+        <string name="tuesday">मंगलवार</string>
+        <string name="wednesday">बुधवार</string>
+        <string name="thursday">गुरूवार</string>ss
+        <string name="friday">शुक्रवार</string>
+        <string name="saturday">शनिवार</string>
+        <string name="type_message_here">प्रकार यहाँ संदेश </string>
+        <string name="send_message">मेसेज भेजें </string>
+        <string name="view_patients">मरीजों को देखें </string>
+        <string name="view_appointments"> नियुक्ति देखें </string>
+        <string name="medical_history">चिकित्सा का इतिहास</string>
+        <string name="view_profile">प्रोफाइल देखिये </string>
+        <string name="logout">लोग आउट </string>
+        <string name="email">ईमेल</string>
+        <string name="password">पासवर्ड </string>
+        <string name="login">लॉग इन करें</string>
+        <string name="take_a_amsler_test"> एम्सलेर परीक्षा ले  </string>
+        <string name="chat_with_doctor"> डॉक्टर के साथ चैट करें </string>
+</resources>
+

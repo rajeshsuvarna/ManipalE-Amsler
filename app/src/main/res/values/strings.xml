@@ -21,5 +21,37 @@
 
         <string name="slide_5_title">Cool</string>
         <string name="slide_5_desc">You cant buy happiness, but you can buy new glasses!</string>
-    </resources>
+        <string name="start_test">START TEST</string>
+        <string name="clear">CLEAR</string>
+        <string name="dark_spot">Dark Spot</string>
+        <string name="blur">Blur</string>
+        <string name="wavy">Wavy</string>
+        <string name="distort">Distort</string>
+        <string name="book_an_appointment">Book an Appointment</string>
+        <string name="week_schedule_dr">Week Schedule : Dr.</string>
+        <string name="subramanyam">Subramanyam</string>
+        <string name="days">Days</string>
+        <string name="morning">Morning</string>
+        <string name="afternoon">Afternoon</string>
+        <string name="monday">Monday</string>
+        <string name="_0900_1200">0900 - 1200</string>
+        <string name="_1400_1700">1400 - 1700</string>
+        <string name="tuesday">Tuesday</string>
+        <string name="wednesday">Wednesday</string>
+        <string name="thursday">Thursday</string>
+        <string name="friday">Friday</string>
+        <string name="saturday">Saturday</string>
+        <string name="type_message_here">Type message here</string>
+        <string name="send_message">Send Message</string>
+        <string name="view_patients">View Patients</string>
+        <string name="view_appointments">View Appointments</string>
+        <string name="medical_history">Medical History</string>
+        <string name="view_profile">View Profile</string>
+        <string name="logout">Logout</string>
+        <string name="email">Email</string>
+        <string name="password">Password</string>
+        <string name="login">Login</string>
+        <string name="take_a_amsler_test">Take a Amsler test</string>
+        <string name="chat_with_doctor">Chat with doctor</string>
+</resources>
 

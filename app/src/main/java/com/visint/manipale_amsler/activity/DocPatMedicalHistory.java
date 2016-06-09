@@ -3,15 +3,12 @@ package com.visint.manipale_amsler.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.VolleyLog;
-import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.visint.manipale_amsler.R;
 import com.visint.manipale_amsler.app.AppConfig;
@@ -19,25 +16,24 @@ import com.visint.manipale_amsler.app.AppController;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by Joyel on 6/3/2016.
+ * Created by Joyel on 6/9/2016.
  */
-public class MedicalHistory extends Activity {
+public class DocPatMedicalHistory  extends Activity {
 
     String tag_json_obj = "json_obj_req";
     String pat_id= "102";
 
     TextView jchiefcomplaint,jcomplaintdate,jsymptoms,jlocation,jseverity,jnatureofonset,jduration,
-    jfrequency,jexcrebation,jaccompanyingsigns,jsecondaycomplaint,jocularhistory,jmedicalhistory,
-    jmedicationhistory,jallergyhistory,jfamilyocularhistory,jfamilymedicalhistory,jmentalstatus;
+            jfrequency,jexcrebation,jaccompanyingsigns,jsecondaycomplaint,jocularhistory,jmedicalhistory,
+            jmedicationhistory,jallergyhistory,jfamilyocularhistory,jfamilymedicalhistory,jmentalstatus;
 
     TextView jtestdate,jbvaod,jbvdos,jpupils,jeoms,jconforntationfeild,jslitlamplids,jiops,jfundusod,
-    jfundusos,jbloodpressure,jpulse,jcholestrol;
+            jfundusos,jbloodpressure,jpulse,jcholestrol;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,7 +85,7 @@ public class MedicalHistory extends Activity {
                     @Override
                     public void onResponse(String response) {
 
-                        Toast.makeText(MedicalHistory.this, response.toString(),Toast.LENGTH_LONG).show();
+                        Toast.makeText(DocPatMedicalHistory.this, response.toString(),Toast.LENGTH_LONG).show();
                         try{
                             JSONObject jsonObject = new JSONObject(response);
                             boolean error = jsonObject.getBoolean("error");
@@ -128,7 +124,7 @@ public class MedicalHistory extends Activity {
                                 jmedicationhistory.setText(medication_history);
                                 String allergy_history = chief_complaint.getString("allergy_history");
                                 jallergyhistory.setText(allergy_history);
-                               String family_ocular_history = chief_complaint.getString("family_ocular_history");
+                                String family_ocular_history = chief_complaint.getString("family_ocular_history");
                                 jocularhistory.setText(family_ocular_history);
                                 String family_medical_history = chief_complaint.getString("family_medical_history");
                                 jfamilymedicalhistory.setText(family_medical_history);
@@ -146,7 +142,7 @@ public class MedicalHistory extends Activity {
                                 jtestdate.setText(test_date);
                                 String BVA_od = clinical_data.getString("BVA_od");
                                 jbvaod.setText(BVA_od);
-                              //  String BVA_os = clinical_data.getString("BVA_os");
+                                //  String BVA_os = clinical_data.getString("BVA_os");
                                 //jbvdos.setText(BVA_os);
                                 String pupils = clinical_data.getString("pupils");
                                 jpupils.setText(pupils);
@@ -193,7 +189,7 @@ public class MedicalHistory extends Activity {
             public void onErrorResponse(VolleyError error) {
                 //Log.e(TAG, "Login Error: " + error.getMessage());
                 Toast.makeText(getApplicationContext(),"Unexcepted error, Please check your 3G/ WIFI connection availability or try after some time", Toast.LENGTH_LONG).show();
-               // hideDialog();
+                // hideDialog();
             }
         }) {
 
@@ -212,11 +208,11 @@ public class MedicalHistory extends Activity {
 
     }
 
-    // Back pressed code to go to Patient dashboard
+    // Back pressed code to go to Doctor dashboard
     @Override
     public void onBackPressed()
     {
-        Intent medichisback=new Intent(MedicalHistory.this,PatientActivity.class);
+        Intent medichisback=new Intent(DocPatMedicalHistory.this,DoctorActivity.class);
         startActivity(medichisback);
         finish();
     }
